@@ -2,8 +2,8 @@ def substrings(word, arr)
     # return a hash listing each substring and how many times it was found 
     hash_result = {}
     # pour chaque item de array
-    arr.each_with_index do
-        |val, i| 
+    arr.each do
+        |val| 
         if word.include?(val)
             if hash_result[val]
                 hash_result[val] += 1
